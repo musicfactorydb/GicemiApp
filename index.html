@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Glicemia</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<h1>Registro de Glicemia en Ayunas</h1>
+
+<section id="datos-personales">
+  <h2>Datos Personales</h2>
+  <form id="form-datos">
+    <input type="text" id="nombre" placeholder="Nombre completo" required>
+    <input type="text" id="medico" placeholder="Nombre de su médico" required>
+    <input type="date" id="fecha-nacimiento" required>
+    <button type="submit">Guardar Datos</button>
+  </form>
+</section>
+
+<section id="registro-glicemia">
+  <h2>Nuevo Registro</h2>
+  <form id="form-glicemia">
+    <input type="number" id="valor" placeholder="Valor glicemia (mg/dL)" required>
+    <button type="submit">Guardar</button>
+  </form>
+</section>
+
+<section id="tabla-registros">
+  <h2>Historial</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Valor</th>
+        <th>Clasificación</th>
+      </tr>
+    </thead>
+    <tbody id="lista-registros"></tbody>
+  </table>
+</section>
+
+<section id="filtros">
+  <h2>Filtros</h2>
+  <button onclick="filtrar('todos')">Todos</button>
+  <button onclick="filtrar('bajo')">Bajo</button>
+  <button onclick="filtrar('normal')">Normal</button>
+  <button onclick="filtrar('alto')">Alto</button>
+</section>
+
+<button onclick="exportarCSV()">Exportar CSV</button>
+<button onclick="respaldarDrive()">Respaldar en Drive</button>
+
+</body>
+</html>

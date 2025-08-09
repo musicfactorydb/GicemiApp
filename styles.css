@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1, h2 { text-align: center; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+.normal { background-color: #a4f5a4; }
+.bajo { background-color: #a4c4f5; }
+.alto { background-color: #f5a4a4; }

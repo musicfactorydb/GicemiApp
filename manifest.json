@@ -1,0 +1,13 @@
+{
+    "name": "Registro de Glicemia",
+    "short_name": "Glicemia",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "Registro de glicemia en ayunas con clasificación automática.",
+    "icons": [{
+        "src": "icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}
